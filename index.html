@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<title>GAMBEA</title>
+<body>
+
+<div class="wrapper" id="form">
+    <div class="inner">
+        <form name="myForm" action="/" onsubmit="return validateForm()">
+            <h2>Personal Information</h2>
+            <hr>
+            <div class="form-group">
+                <input class="form-control" placeholder="Surname" type="text" 
+                name="sname" required autofocus> <!--SURNAME-->
+                <input class="form-control" placeholder="Given name" type="text" 
+                name="gname" style="margin-right: 25px;" required> <!--GIVENNAME-->
+                <input class="form-control" placeholder="Middle Name" type="text" 
+                name="mname"> <!--MIDDLENAME-->
+            </div>
+            
+            <input class="form-control" placeholder="Student Number" type="text" name="studentnum"
+                id="idStudNum" required maxlength="11" size="11" required><!--STUDENTNUMBER-->
+
+                <input class="form-control" type = "number" placeholder="Current Year Level" 
+                min = "1" max="4" 
+                name="yearLevel" style="margin-right: 25px;" required><!--CURRENT YEARLEVEL-->
+
+                <select name="program" id="programid" class="form-control" required>
+                    <option value="" disabled selected>Program</option>
+                    <option value="male">BS Computer Engineering</option>
+                    <option value="femal">Other Programs</option>
+                </select>
+                <h2>Contact Information</h2>
+                <hr>
+                <input class="form-control" placeholder="UE Email" type="email" 
+                name="" required > <!--UE EMAIL-->
+                <input class="form-control" placeholder="Personal Email" type="email" 
+                name="" required> <!--PERSONAL EMAIL-->
+                <input class="form-control" placeholder="Contact Number (e.g., 09XXXXXXXXX)" 
+                type="number" id="idPhoneNum"  pattern="09" minlength="11" required> <!--CONTACT NUMBER-->
+                <input class="form-control" placeholder="Home Address" type="text" 
+                name="" required > <!--Home Address-->
+                <div class="form-group">
+                    <input class="form-control" placeholder="Provincial Address" type="text" 
+                    name="" style="padding-right: 0px;"> <!--Provincial Address-->
+                    <input style="display: 20px; height: 20px; padding-left: 0px;" type="checkbox" id="" name="" value="">
+                    <label> Same as stated above</label>
+                </div>
+                <h2>Contact Information</h2>
+                <hr>
+                <input class="form-control" placeholder="Facebook Username" type="text" 
+                name="" pattern="@[A-Za-z\d\.]{1,999}" title="input must begin with @" > <!--Facebook Username-->
+                <input class="form-control" placeholder="Instagram Username" type="text" 
+                name="" pattern="@[A-Za-z\d\.]{1,999}" title="input must begin with @" > <!--Instagram Username-->
+                <input class="form-control" placeholder="Twitter Username" type="text" 
+                name="" pattern="@[A-Za-z\d\.]{1,999}" title="input must begin with @" > <!--Twitter Username-->
+
+                <h2>In case of emergency</h2>
+                <hr>
+                <input class="form-control" placeholder="Full Name" type="text" 
+                name="" required> <!-- FULLNAME-->
+                <input class="form-control" placeholder="Relationship" type="text" 
+                name="" required> <!-- Relationship-->
+                <input class="form-control" placeholder="Contact Number (Checking if valid Email)"
+                type="email" name="" required> <!-- Contact number-->
+                <div class="form-group">
+                    <input class="form-control" placeholder="Home Address" type="text" 
+                    name="" style="padding-right: 0px;" required title="If same as stated above type N/a then chec the box"> <!--Home Address-->
+                    <input style="display: 20px; height: 20px; padding-left: 0px;" type="checkbox" id="" name="" value="">
+                    <label> Same as stated above</label>
+                </div>
+                <h2>Contact Information</h2>
+                <hr>
+                <select name="program" id="programid" class="form-control" required>
+                    <option value="" disabled selected>Type</option>
+                    <option value="">New</option>
+                    <option value="">Renewal</option>
+                    <option value="">Honorary</option>
+                </select>
+                <label for="myfile">Proof of Payment:</label>
+                <input type="file" id="myfile" name="myfile" required> <br><br>  
+                <input style="display: 20px; height: 20px; margin: 0%;" type="checkbox" id="" name="" value="" required>
+                <label> I accept terms and Conditions</label>    <br><br>  
+                <button type="submit">SUBMIT</button>
+            </form>
+          
+
+
+    </div>
+
+</div>
+
+
+
+</body>
+</html>
